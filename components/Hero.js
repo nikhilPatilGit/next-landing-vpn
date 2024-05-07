@@ -3,7 +3,6 @@ import { PhoneCall } from "lucide-react";
 import React, { useMemo } from "react";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
-import ButtonOutline from "./misc/ButtonOutline";
 import ButtonPrimary from "./misc/ButtonPrimary";
 
 const Hero = ({
@@ -38,13 +37,19 @@ const Hero = ({
             <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">
               Stay on the Job, Not on the <strong>Phone</strong>.
             </h1>
-            <p className="text-black-500 mt-4 mb-6 text-xl">
-              Meet your AI Receptionist: Seamlessly handles your calls, letting
-              you focus on the job. Ideal for busy tradesmen!
-            </p>
+            <div className="mb-6">
+              <p className="text-black-500 mt-4  text-xl">
+                We provide an AI receptionist for tradesmen: manage calls while
+                you work, review them when you're ready.
+              </p>
+              <p className="text-black-500 mt-4  text-xl">
+                Our AI sounds just like a human, ensuring a natural experience
+                for your callers.
+              </p>
+            </div>
+
             <div className="flex flex-row gap-4">
               <ButtonPrimary>Get Started</ButtonPrimary>
-              <ButtonOutline>Get Started</ButtonOutline>
             </div>
           </div>
           <div className="flex w-full">
@@ -55,12 +60,12 @@ const Hero = ({
                     Don't just take our word for it
                   </h2>
                   <p className="text-xl">
-                    Call Jenny now at <strong>Alpha Plumbing</strong> and hear
-                    how real our AI sounds!{" "}
+                    Call our AI receptionist, <strong>Jenny</strong>, now and
+                    discover just how human-like our AI sounds.
                   </p>
                   <div className="card-actions justify-center my-5">
                     <PhoneCall size={36} color="#f43855" />
-                    <span className="text-2xl">+353 (89) 454-0723</span>
+                    <span className="text-2xl mx-2">+353 (89) 454-0723</span>
                   </div>
                 </div>
               </div>
